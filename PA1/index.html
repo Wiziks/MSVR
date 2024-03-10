@@ -78,6 +78,34 @@
             <p id="slider-value12">25.0</p>
         </div>
     </div>
+    <div class="panel" id="stereo-settings" style="display: none;">
+        <h1>Налаштування 3D</h1>
+        <div class="panel-element">
+            <p>Відстань між очима</p>
+            <input type="range" class="slider" id="slider27" min="-10" max="10" value="0.4" step="0.1">
+            <p id="slider-value27">0.4</p>
+        </div>
+        <div class="panel-element">
+            <p>FOV</p>
+            <input type="range" class="slider" id="slider28" min="0" max="100" value="45" step="1">
+            <p id="slider-value28">45.0</p>
+        </div>
+        <div class="panel-element">
+            <p>Ближня дистанція</p>
+            <input type="range" class="slider" id="slider29" min="0" max="100" value="10" step="1">
+            <p id="slider-value29">10.0</p>
+        </div>
+        <div class="panel-element">
+            <p>Відстань конвергенції</p>
+            <input type="range" class="slider" id="slider30" min="0" max="5000" value="2000" step="10">
+            <p id="slider-value30">2000.0</p>
+        </div>
+        <div class="panel-element">
+            <p>Паралакс</p>
+            <input type="range" class="slider" id="slider31" min="0" max="10" value="0.1" step="0.01">
+            <p id="slider-value31">0.1</p>
+        </div>
+    </div>
     <div class="panel" id="light-settings" style="display: none;">
         <h1>Спрямоване світло</h1>
         <h2>Напрям</h2>
@@ -160,14 +188,23 @@
     <div class="info-panel">
         <p>ЛКМ+Свайп - поворот фігури<br>Колесо миші - зміна позиції<br>1,2,3 - зміна текстури</p>
     </div>
-    <button class="switch-button" id="switch-button">Світло</button>
+    <button class="switch-button" id="switch-button">3D</button>
 
-    <script src="script.js"></script>
-    <script src="drawbox.js"></script>
+    <script src="Variables.js"></script>
+    <script src="InitProgram.js"></script>
+    <script src="VertexShader.js"></script>
+    <script src="FragmentShader.js"></script>
+    <script src="ProcessEvents.js"></script>
+    <script src="DrawBox.js"></script>
     <script src="glMatrix-0.9.5.js"></script>
     <script src="wood_texture.js"></script>
     <script src="stone_texture.js"></script>
     <script src="lava_texture.js"></script>
+    <script src="CreateFigure.js"></script>
+    <script src="DrawModel.js"></script>
+    <script src="StereoCamera.js"></script>
+    <script src="DrawAnaglyphModel.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

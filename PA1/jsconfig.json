@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS"
+    },
+    "include": [
+        "VertexShader.js",
+        "FragmentShader.js",
+        "ProcessEvents.js",
+        "script.js",
+        "DrawBox.js",
+        "glMatrix-0.9.5.js",
+        "wood_texture.js",
+        "stone_texture.js",
+        "lava_texture.js",
+        "CreateFigure.js",
+        "Variables.js",
+        "InitProgram.js",
+        "DrawModel.js",
+        "DrawAnaglyphModel.js",
+        "StereoCamera.js",
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
